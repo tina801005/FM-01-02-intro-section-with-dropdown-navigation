@@ -1,3 +1,134 @@
 *{
     font-family: var(--font-family);
 }
+
+body{
+    background-color: var(--color-background);
+    font-weight: var(--font-weight-normal);
+}
+
+.header .top{
+    padding-top: 20px;
+}
+.top .top-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px; /* 左右內距20px */
+    gap: 60px;
+    color: var(--color-text-secondary); 
+}
+/* logo調整 */
+.top .top-content .logo{
+    cursor: pointer;
+}
+.top .top-content .logo img{
+    width: 100%;
+}
+/* 網頁版nav樣式調整 */
+.top-content .table-nav{
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+/* nav 水平導覽列 */
+.top-content .table-nav .nav-list{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 35px;
+    width: 100%;
+    position: relative;
+}
+
+/* 水平導覽列hover */
+.top-content .table-nav .nav-list li>a:hover,
+.top-content .table-nav .nav-list li>h3:hover{
+    color: var(--nav-hover-color);
+    cursor: pointer;
+}
+
+.top-content .table-nav .nav-list li>h3{
+    position: absolute;
+    top: 12px;
+}
+/* 水平導覽列，有二階選單的list才有小箭頭 */
+.table-nav .nav-list .list-arrow::before{
+    content: url(https://raw.githubusercontent.com/tina801005/FM-01-02-intro-section-with-dropdown-navigation/refs/heads/master/images/icon-arrow-down.svg);
+    display: inline-block;
+    position: relative;
+    margin-left: 80px;
+    cursor: pointer;
+}
+/* 水平導覽列 有二階選單的選項hover 小箭頭轉向 */
+.table-nav .nav-list .list-arrow:hover::before{
+    content:url(https://raw.githubusercontent.com/tina801005/FM-01-02-intro-section-with-dropdown-navigation/refs/heads/master/images/icon-arrow-up.svg);
+}
+
+/* nav 下拉選單 */
+.top-content .table-nav .nav-list .list-items{
+    position: absolute;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--dropdown-background-color);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+    /* 預設隱藏二階選單，hover時展開 */
+    text-align: left;
+    transform-origin: top center; /* 縮放基準點 */
+    transform: scaleY(0); /* 預設縮放為0 */
+    transition: transform 0.3s; /* 動畫效果 */
+}
+
+/* nav 下拉選單 hover */
+.top-content .table-nav .nav-list li:hover .list-items{
+    transform: scaleY(1); /* 滑鼠移入時縮放為1 */
+}
+
+/* nav 下拉選單個別調整 */
+.top-content .table-nav .nav-list .features-items{
+    width: 160px;
+    top: 40px;
+    left: -70px;
+}
+.top-content .table-nav .nav-list .company-items{
+    width: 120px;
+    top: 40px;
+    left: 120px;
+}
+.top-content .table-nav .nav-list .features-items li,
+.top-content .table-nav .nav-list .company-items li{
+    white-space: nowrap;
+}
+.top-content .table-nav .nav-list .features-items .item-icon{
+    display: inline-block;
+    width: 15px;
+    margin-right: 10px;
+}
+
+/* nav user */
+.top-content .table-nav .user{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 36px;
+    width: 100%;
+}
+
+/* user按鈕個別調整 */
+.table-nav .user .btn-register{
+    border: 2px solid var(--button-register-border-color);
+    padding: 10px 18px;
+    border-radius: var(--border-radius);
+}
+
+/* user按鈕hover */
+.top-content .table-nav .user a:hover{
+    color:var(--nav-hover-color);
+}
+.top-content .table-nav .user .btn-register:hover{
+    border-color: var(--nav-hover-color);
+}

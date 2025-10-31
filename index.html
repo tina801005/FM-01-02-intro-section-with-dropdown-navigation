@@ -10,53 +10,15 @@
 
   <!-- css -->
   <!-- reset.css -->
-  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="./css/reset.css">
   <!-- root.css -->
-  <link rel="stylesheet" href="/css/root.css">
+  <link rel="stylesheet" href="./css/root.css">
   <!-- style.css -->
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 
   <!-- css測試區塊開始-->
   <style>
-  .header{
-    border:1px solid red; /* 測試用邊框，完成後可刪除 */
-  }
-  .header .top{
-    padding-top: 20px;
-  }
-  .top .top-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px; /* 左右內距20px */
-    gap: 24px;
-  }
-
-  .top .top-content .logo img{
-    width: 100%;
-  }
-
-  .top-content .table-nav{
-    display: flex;
-    flex: 1;
-    width: 100%;
-  }
-
-  .top-content .table-nav .nav-list{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 24px;
-    width: 100%;
-  }
-
-  .top-content .table-nav .user{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 24px;
-    width: 100%;
-  }
+  
   </style>
   <!-- css測試區塊結束 -->
 
@@ -86,18 +48,29 @@
         <!-- nav開始 -->
         <nav class="table-nav">
           <ul class="nav-list">
-            <li>
+            <li class="list-arrow">
               <h3>Features</h3>
+              <ul class="list-items features-items">
+                <li><a href="#"><span class="item-icon"><img src="https://raw.githubusercontent.com/tina801005/FM-01-02-intro-section-with-dropdown-navigation/refs/heads/master/images/icon-todo.svg" alt="icon todo-list"></span>Todo List</a></li>
+                <li><a href="#"><span class="item-icon"><img src="https://raw.githubusercontent.com/tina801005/FM-01-02-intro-section-with-dropdown-navigation/refs/heads/master/images/icon-calendar.svg" alt="icon calendar"></span>Calendar</a></li>
+                <li><a href="#"><span class="item-icon"><img src="https://raw.githubusercontent.com/tina801005/FM-01-02-intro-section-with-dropdown-navigation/refs/heads/master/images/icon-reminders.svg" alt="icon reminders"></span>Reminders</a></li>
+                <li><a href="#"><span class="item-icon"><img src="https://raw.githubusercontent.com/tina801005/FM-01-02-intro-section-with-dropdown-navigation/refs/heads/master/images/icon-planning.svg" alt="icon planning"></span>Planning</a></li>
+              </ul>
             </li>
-            <li>
+            <li class="list-arrow">
               <h3>Company</h3>
+              <ul class="list-items company-items">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
             </li>
             <li><a href="#">Careers</a></li>
             <li><a href="#">About</a></li>
           </ul>
           <div class="user">
-            <a href="#">Login</a>
-            <a href="#">Register</a>
+            <a href="#" class="btn-login">Login</a>
+            <a href="#" class="btn-register">Register</a>
           </div>
         </nav>
         <!-- nav結束 -->
