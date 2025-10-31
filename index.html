@@ -18,7 +18,45 @@
 
   <!-- css測試區塊開始-->
   <style>
-  
+  .header{
+    border:1px solid red; /* 測試用邊框，完成後可刪除 */
+  }
+  .header .top{
+    padding-top: 20px;
+  }
+  .top .top-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* 左右內距20px */
+    gap: 24px;
+  }
+
+  .top .top-content .logo img{
+    width: 100%;
+  }
+
+  .top-content .table-nav{
+    display: flex;
+    flex: 1;
+    width: 100%;
+  }
+
+  .top-content .table-nav .nav-list{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .top-content .table-nav .user{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+  }
   </style>
   <!-- css測試區塊結束 -->
 
@@ -35,16 +73,48 @@
 </head>
 <body>
   <!-- 區塊1：header(放置logo,nav(table&mobile),mask) -->
+  <header class="header">
+    <!-- header內容 -->
+    <div class="top">
+      <div class="top-content">
+        <!-- logo開始 -->
+        <div class="logo">
+          <img src="https://raw.githubusercontent.com/tina801005/FM-01-02-intro-section-with-dropdown-navigation/refs/heads/master/images/logo.svg" alt="logo snap">
+        </div>
+        <!-- logo結束 -->
+        
+        <!-- nav開始 -->
+        <nav class="table-nav">
+          <ul class="nav-list">
+            <li>
+              <h3>Features</h3>
+            </li>
+            <li>
+              <h3>Company</h3>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <div class="user">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+          </div>
+        </nav>
+        <!-- nav結束 -->
+      </div>
+    </div>
+
+  </header>
 
   <!-- 區塊2：main(放置article及image) -->
 
-  Features
-  Company
-  Careers
-  About
+  <!-- 
+  
+  
+  
 
-  Login
-  Register
+  
+  
 
   Make remote work
 
@@ -56,6 +126,9 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Tina Wang</a>.
-  </div>
+  </div> -->
+
+  <!-- js連結及測試 -->
+  <script></script>
 </body>
 </html>

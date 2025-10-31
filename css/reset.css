@@ -61,6 +61,7 @@ h4,
 h5,
 h6 {
     font-weight: inherit;
+    font-size: inherit;
 }
 /* 清除圖片預設樣式 */
 img {
