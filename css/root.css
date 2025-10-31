@@ -1,0 +1,31 @@
+:root{
+    /* 顏色控制區 */
+    /* 色票 */
+    --color-white:hsl(0, 0%, 98%);
+    --color-gray:hsl(0, 0%, 41%);
+    --color-black:hsl(0, 0%, 8%);
+
+    /* 語意 */
+    --color-background:var(--color-white);
+    --color-text-primary:var(--color-black);
+    --color-text-secondary:var(--color-gray);
+
+    /* 元件 */
+    --button-LearnMoreText-color:var(--color-white);
+    --button-LearnMoreBackground-color:var(--color-black);
+    --nav-hover-color:var(--color-text-primary);
+
+    /* 尺寸控制區 */
+    /* 文字 */
+    --font-weight-normal:500;
+    --font-weight-bold:700;
+    --font-size-normal: 18px;
+    --font-family:"Epilogue", sans-serif;
+
+    /* 邊框 */
+    --border-radius:15px;
+
+    /* 元件 */
+    --article-title-font-size:clamp(32px, 5vw, 56px);
+    --article-paragraph-font-size:clamp(16px, 2.5vw, 20px);
+}

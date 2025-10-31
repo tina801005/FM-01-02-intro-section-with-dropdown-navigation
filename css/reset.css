@@ -1,0 +1,69 @@
+/* 樣式重置，清除默認樣式 */
+
+/* 設置為盒模型，並用繼承的方式添加至所有元件。提高穩定度及易維護性 */
+html {
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+/* 將塊級元素的內外邊界設置為0 */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+/* a標籤移除預設的超連結樣式(藍色字體、底線、背景色) */
+a {
+    text-decoration: none;
+    background-color: transparent;
+    outline-width: 0;
+    color: inherit;
+}
+a:hover,
+a:active {
+    outline-width: 0;
+    text-decoration: none;
+}
+
+/* 移除選單標籤預設的項目符號 */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 標題字重清除 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+}
+/* 清除圖片預設樣式 */
+img {
+    max-width: 100%;
+    display: block;
+}
