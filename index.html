@@ -44,8 +44,14 @@
           <img src="https://raw.githubusercontent.com/tina801005/FM-01-02-intro-section-with-dropdown-navigation/refs/heads/master/images/logo.svg" alt="logo snap">
         </div>
         <!-- logo結束 -->
+
+        <!-- 漢堡選單icon 開始 -->
+        <div class="hamburger_menu-icon" id="J_hamburger_menu-icon">
+          <img src="https://raw.githubusercontent.com/tina801005/FM-01-02-intro-section-with-dropdown-navigation/refs/heads/master/images/icon-menu.svg" alt="icon menu">
+        </div>
+        <!-- 漢堡選單icon 結束 -->
         
-        <!-- nav開始 -->
+        <!-- 水平 nav開始 -->
         <nav class="table-nav">
           <ul class="nav-list">
             <li class="list-arrow">
@@ -73,22 +79,61 @@
             <a href="#" class="btn-register">Register</a>
           </div>
         </nav>
-        <!-- nav結束 -->
+        <!-- 水平 nav結束 -->
+
+        <!-- 移動端垂直menu 開始 -->
+        <nav class="mobile-nav" id="J_mobile-nav">
+          <!-- 關閉icon 開始-->
+          <div class="close-btn" id="J_close-btn">
+            <img src="https://raw.githubusercontent.com/tina801005/FM-01-02-intro-section-with-dropdown-navigation/1a6d5d463ee8bd29e349916bfa3cd7c2e2e94dc5/images/icon-close-menu.svg" alt="icon close-menu">
+          </div>
+          <!-- 關閉icon 結束 -->
+
+          <!-- 移動端選單內容 開始 -->
+          <ul class="mobile-menu " id="J_mobile-menu">
+            <li>
+              <h3>Features
+                <span><img src="https://raw.githubusercontent.com/tina801005/FM-01-02-intro-section-with-dropdown-navigation/refs/heads/master/images/icon-arrow-down.svg" alt="icon arrow-down"></span>
+              </h3>
+              <ul class="mobile-menu-items">
+                <li><a href="#"><span class="item-icon"><img src="https://raw.githubusercontent.com/tina801005/FM-01-02-intro-section-with-dropdown-navigation/refs/heads/master/images/icon-todo.svg" alt="icon todo-list"></span>Todo List</a></li>
+                <li><a href="#"><span class="item-icon"><img src="https://raw.githubusercontent.com/tina801005/FM-01-02-intro-section-with-dropdown-navigation/refs/heads/master/images/icon-calendar.svg" alt="icon calendar"></span>Calendar</a></li>
+                <li><a href="#"><span class="item-icon"><img src="https://raw.githubusercontent.com/tina801005/FM-01-02-intro-section-with-dropdown-navigation/refs/heads/master/images/icon-reminders.svg" alt="icon reminders"></span>Reminders</a></li>
+                <li><a href="#"><span class="item-icon"><img src="https://raw.githubusercontent.com/tina801005/FM-01-02-intro-section-with-dropdown-navigation/refs/heads/master/images/icon-planning.svg" alt="icon planning"></span>Planning</a></li>
+              </ul>
+            </li>
+            <li>
+              <h3>Company
+                <span><img src="https://raw.githubusercontent.com/tina801005/FM-01-02-intro-section-with-dropdown-navigation/refs/heads/master/images/icon-arrow-down.svg" alt="icon arrow-down"></span>
+              </h3>
+              <ul class="mobile-menu-items">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+            <div class="mobile-user">
+              <a href="#" class="mobile-btn-login">Login</a>
+              <a href="#" class="mobile-btn-register">Register</a>
+            </div>
+          </ul>
+          <!-- 移動端選單內容 結束 -->
+        </nav>
+        <!-- 移動端垂直menu 結束 -->
       </div>
     </div>
+    
 
   </header>
+  <!-- 黑色半透明遮罩 開始-->
+  <div class="mask" id="J_mask"></div>
+  <!-- 黑色半透明遮罩 結束-->
 
   <!-- 區塊2：main(放置article及image) -->
 
   <!-- 
-  
-  
-  
-
-  
-  
-
   Make remote work
 
   Get your team in sync, no matter your location. Streamline processes, 
@@ -102,6 +147,7 @@
   </div> -->
 
   <!-- js連結及測試 -->
+  <script src="./js/mobilemenu.js"></script>
   <script></script>
 </body>
 </html>

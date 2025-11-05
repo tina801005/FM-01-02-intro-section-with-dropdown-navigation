@@ -1,0 +1,9 @@
+@media screen and (max-width: 992px){
+    .top-content .table-nav{
+        display: none;
+    }
+
+    .top .top-content .hamburger_menu-icon{
+        display: block;
+    }
+}

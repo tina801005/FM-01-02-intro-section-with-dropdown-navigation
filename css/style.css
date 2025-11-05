@@ -44,7 +44,9 @@ body{
 
 /* 水平導覽列hover */
 .top-content .table-nav .nav-list li>a:hover,
-.top-content .table-nav .nav-list li>h3:hover{
+.top-content .table-nav .nav-list li>h3:hover,
+.top-content .mobile-nav .mobile-menu li>a:hover,
+.top-content .mobile-nav .mobile-menu li>h3:hover{
     color: var(--nav-hover-color);
     cursor: pointer;
 }
@@ -103,7 +105,8 @@ body{
 .top-content .table-nav .nav-list .company-items li{
     white-space: nowrap;
 }
-.top-content .table-nav .nav-list .features-items .item-icon{
+.top-content .table-nav .nav-list .features-items .item-icon,
+.top .mobile-nav .mobile-menu .mobile-menu-items .item-icon{
     display: inline-block;
     width: 15px;
     margin-right: 10px;
@@ -126,9 +129,105 @@ body{
 }
 
 /* user按鈕hover */
-.top-content .table-nav .user a:hover{
+.top-content .table-nav .user>a:hover,
+.mobile-nav .mobile-menu .mobile-user>a:hover{
     color:var(--nav-hover-color);
 }
-.top-content .table-nav .user .btn-register:hover{
+.top-content .table-nav .user .btn-register:hover,
+.mobile-nav .mobile-menu .mobile-user .mobile-btn-register:hover{
     border-color: var(--nav-hover-color);
 }
+
+/* 漢堡選單樣式 開始*/
+.top .top-content .hamburger_menu-icon{
+    cursor: pointer;
+    display: none; 
+    width:30px;
+    height:20px; 
+    order: 1; /* 讓漢堡選單icon在最前面 */
+}
+.top .top-content .hamburger_menu-icon img{
+    width: 100%;
+    height: 100%;
+}
+/* 漢堡選單樣式 結束*/
+
+/* 黑色半透明遮罩 開始 */
+.mask{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5; 
+    background-color: rgba(0,0,0,0.6);
+}
+/* 黑色半透明遮罩 結束 */
+
+/* 移動端垂直選單樣式 開始 */
+.top .mobile-nav{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 35% ;
+    height: 100vh;
+    background-color: var(--color-background);
+    z-index: 10;
+    padding: 20px;
+    font-size: var(--font-size-normal);
+}
+
+/* 關閉button樣式調整 開始 */
+.top .mobile-nav .close-btn{
+    position: absolute; 
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    cursor: pointer;
+}
+.top .mobile-nav .close-btn img{
+    width: 100%;
+    height: 100%;
+}
+/* 關閉button樣式調整 結束 */
+
+/* 選單內容樣式調整 開始 */
+.top .mobile-nav .mobile-menu{
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top .mobile-nav .mobile-menu .mobile-menu-items{
+    margin-top: 15px;
+    display: none;
+    flex-direction: column;
+    padding-left: 20px;
+    line-height: 2;
+}
+/* 選單內容樣式調整 結束 */
+
+/* 選單內容 - userbutton 樣式調整 開始 */
+.mobile-nav .mobile-menu .mobile-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.5;
+}
+
+.mobile-nav .mobile-menu .mobile-user .mobile-btn-register{
+    border: 2px solid var(--button-register-border-color);
+    border-radius: var(--border-radius);
+    text-align: center;
+    width: 100%;
+}
+
+/* 選單內容 - user button樣式調整 結束 */
+/* 移動端垂直選單樣式 結束 */
