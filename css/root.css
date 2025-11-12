@@ -13,6 +13,9 @@
     /* 元件 */
     --button-LearnMoreText-color:var(--color-white);
     --button-LearnMoreBackground-color:var(--color-black);
+
+    --hover-button-LearnMoreText-color:var(--color-black);
+    --hover-button-LearnMoreBackground-color:var(--color-white);
     --nav-hover-color:var(--color-text-primary);
     --dropdown-background-color:var(--color-white);
     --button-register-border-color:var(--color-gray);
@@ -28,6 +31,7 @@
     --border-radius:10px;
 
     /* 元件 */
-    --article-title-font-size:clamp(32px, 5vw, 56px);
+    --article-title-font-size:clamp(53px, 5vw, 82px);
+    --mobile-article-title-font-size:clamp(28px, 2.5vw, 72px);
     --article-paragraph-font-size:clamp(16px, 2.5vw, 20px);
 }
